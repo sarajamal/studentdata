@@ -9,7 +9,7 @@ export default function DetailsStudent (){
           .then((res) => res.json())
           .then((data) => setStudentData(data))
           .catch((err) => console.log(err.message));
-      }, []); 
+      }, [studentID]); 
       
     return(
     <div className="container-view">

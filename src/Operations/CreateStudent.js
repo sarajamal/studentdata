@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, redirect, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function CreateStudent (){
     const[id,setId]= useState("");
@@ -34,7 +34,7 @@ export default function CreateStudent (){
         <label htmlFor="id">ID:</label>
         <input type="text" id="id" name="id"className="form-input" onChange={e=>setId(
             e.target.value)} required value={id} onMouseDown={()=>setValidation(true)}></input>
-            {id.length==0 && validation &&
+            {id.length===0 && validation &&
        <span className="errMG"> Please  Enter Your ID </span>}
          </div>
 
@@ -42,7 +42,7 @@ export default function CreateStudent (){
         <label htmlFor="name">NAME:</label>
         <input type="text" id="name" name="name"className="form-input" onChange={e=>setName(
             e.target.value)} required value={name} onMouseDown={()=>setValidation(true)}></input>
-        {name.length==0 && validation &&
+        {name.length===0 && validation &&
        <span className="errMG"> Please  Enter Your Name </span>}
         </div>
 
@@ -50,7 +50,7 @@ export default function CreateStudent (){
         <label htmlFor="place">PLACE:</label>
         <input type="text" id="place" name="place"className="form-input"
          onChange={e=> setPlace(e.target.value)} required value={place} onMouseDown={()=>setValidation(true)}></input>
-        {place.length==0 && validation &&
+        {place.length===0 && validation &&
         <span className="errMG"> Please  Enter Your Place </span>}
          </div>
          
@@ -59,7 +59,7 @@ export default function CreateStudent (){
         <label htmlFor="phone">PHONE:</label>
         <input type="text" id="phone" name="phone"className="form-input"
          onChange={e=> setPhone(e.target.value)} required value={phone}onMouseDown={()=>setValidation(true)}></input>
-         {phone.length==0 && validation &&
+         {phone.length===0 && validation &&
         <span className="errMG"> Please  Enter Your number </span>}
        </div>
          <div className="d-flex gap-1">
