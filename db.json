@@ -1,0 +1,22 @@
+{
+  "students": [
+    {
+      "id": "1",
+      "name": "Rola",
+      "place": "Riyadh",
+      "phone": "966555888896"
+    },
+    {
+      "id": "2",
+      "name": "srah",
+      "place": "Riyadh",
+      "phone": "96888888888888"
+    },
+    {
+      "id": "3",
+      "name": "Sarah jamal",
+      "place": "Riyadh",
+      "phone": "0533333333"
+    }
+  ]
+}
